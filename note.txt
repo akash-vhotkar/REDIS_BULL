@@ -1,0 +1,15 @@
+redis is the in memory database
+bull is node js libranry which build robust and fast queue system on the top 
+of the redis in memory  database 
+bull have three parts 
+producers =>  which push the job into the queue 
+consumer => which  execute the job
+listners => which  listen to job 
+Listeners can be local, meaning that they only will receive notifications produced in the 
+given queue instance, or global, meaning that they listen to all the events for a given queue. 
+
+
+
+What is stalled job 
+A stalled job is a job that is being 
+processed but where Bull suspects that the process function has hanged.
